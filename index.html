@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#082b43">
+  <meta name="description" content="You're invited to a birthday adventure across the Grand Line!">
+  <title>Birthday Adventure | Grand Line Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto+Slab:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ocean-sky" aria-hidden="true">
+    <div class="sun"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+    <div class="ship">⛵</div>
+    <div class="wave wave-back"></div><div class="wave wave-front"></div>
+  </div>
+
+  <div class="intro-screen" id="intro">
+    <div class="intro-content">
+      <p class="eyebrow">⚓ THE GRAND LINE CALLS ⚓</p>
+      <div class="intro-flag">☠</div>
+      <h1>AHOY, PIRATE!</h1>
+      <p class="intro-subtitle">YOU'RE INVITED TO AN ADVENTURE!</p>
+      <div class="treasure-chest" aria-hidden="true">🧰</div>
+      <p class="intro-note">A special treasure is waiting to be discovered...</p>
+      <button class="button button-gold" id="openInvitation">OPEN YOUR INVITATION <span>➜</span></button>
+      <p class="tiny-note">Tap to begin your voyage</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Back to top">☠ GRAND LINE INVITATION</a>
+    <button class="music-button" id="musicToggle" type="button" aria-pressed="false">♫ MUSIC: OFF</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-stamp">YOU'RE<br>INVITED!</div>
+      <p class="eyebrow">A MESSAGE FROM THE STRAW HAT CREW</p>
+      <h1>Set Sail for a<br><span>Birthday Adventure!</span></h1>
+      <p class="hero-copy">The Grand Line has led us to a special occasion. Join our crew for a day filled with laughter, memories, and celebration!</p>
+      <a class="button button-red" href="#invitation">VIEW THE INVITATION <span>↓</span></a>
+      <div class="scroll-hint">SCROLL TO EXPLORE <span>⌄</span></div>
+    </section>
+
+    <section class="section-shell invitation-section" id="invitation">
+      <div class="section-heading">
+        <p class="eyebrow">WANTED: ONE VERY SPECIAL GUEST</p>
+        <h2>The Birthday Captain</h2>
+        <p>Our crew has a reason to celebrate!</p>
+      </div>
+      <article class="wanted-poster reveal">
+        <div class="poster-top">WANTED</div>
+        <div class="poster-sub">DEAD OR ALIVE • TO CELEBRATE!</div>
+        <div class="portrait-frame">
+          <img src="assets/celebrant.jpg" alt="Birthday celebrant" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+          <div class="portrait-placeholder">ADD YOUR<br>PHOTO HERE</div>
+        </div>
+        <p class="poster-name" id="celebrantName">[CELEBRANT'S NAME]</p>
+        <div class="poster-details">
+          <p><strong>OCCASION</strong><span id="occasion">[AGE / BIRTHDAY CELEBRATION]</span></p>
+          <p><strong>DATE</strong><span id="eventDate">[BIRTHDAY DATE]</span></p>
+          <p><strong>TIME</strong><span id="eventTime">[EVENT TIME]</span></p>
+        </div>
+        <div class="bounty">A DAY FULL OF FUN!</div>
+        <div class="poster-footer">THE WORLD'S GREATEST BIRTHDAY ADVENTURE</div>
+      </article>
+      <p class="invitation-message">“The Grand Line has led us to a special occasion! Join our crew as we celebrate another year of adventure, laughter, and unforgettable memories.”</p>
+    </section>
+
+    <section class="countdown-section">
+      <div class="section-shell countdown-inner">
+        <p class="eyebrow">⏳ THE VOYAGE BEGINS IN</p>
+        <h2>Countdown to the Celebration</h2>
+        <div class="countdown" aria-live="polite">
+          <div><strong id="days">00</strong><span>DAYS</span></div>
+          <div><strong id="hours">00</strong><span>HOURS</span></div>
+          <div><strong id="minutes">00</strong><span>MINUTES</span></div>
+          <div><strong id="seconds">00</strong><span>SECONDS</span></div>
+        </div>
+        <p class="countdown-caption" id="countdownMessage">Prepare your crew. Adventure awaits!</p>
+      </div>
+    </section>
+
+    <section class="section-shell locations-section" id="locations">
+      <div class="section-heading">
+        <p class="eyebrow">CHART YOUR COURSE</p>
+        <h2>Treasure Map to the Celebration</h2>
+        <p>Two important stops on our birthday voyage.</p>
+      </div>
+      <div class="location-grid">
+        <article class="map-card reveal">
+          <div class="map-art church-art"><span>⛪</span><small>FIRST DESTINATION</small></div>
+          <div class="map-card-content">
+            <p class="card-kicker">⚓ STOP 01 • THE CEREMONY</p>
+            <h3>[CHURCH NAME]</h3>
+            <p class="address">[Complete church address]</p>
+            <p class="schedule"><strong>DATE & TIME</strong><br>[Ceremony schedule]</p>
+            <a class="button button-blue" id="churchMap" href="https://www.google.com/maps/search/?api=1&query=Church+Name+Church+Address" target="_blank" rel="noopener">FIND THE CHURCH ↗</a>
+          </div>
+        </article>
+        <article class="map-card reveal">
+          <div class="map-art reception-art"><span>🏴‍☠️</span><small>FINAL DESTINATION</small></div>
+          <div class="map-card-content">
+            <p class="card-kicker">⚓ STOP 02 • THE FEAST</p>
+            <h3>[RECEPTION VENUE]</h3>
+            <p class="address">[Complete reception address]</p>
+            <p class="schedule"><strong>DATE & TIME</strong><br>[Reception schedule]</p>
+            <a class="button button-blue" id="receptionMap" href="https://www.google.com/maps/search/?api=1&query=Reception+Venue+Reception+Address" target="_blank" rel="noopener">FIND THE RECEPTION ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery-section section-shell">
+      <div class="section-heading">
+        <p class="eyebrow">MEMORIES FROM OUR ADVENTURES</p>
+        <h2>The Captain's Gallery</h2>
+        <p>A few snapshots from the journey so far.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-photo"><img src="assets/photo-1.jpg" alt="Celebrant memory one" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"><span>PHOTO 01</span></figure>
+        <figure class="gallery-photo"><img src="assets/photo-2.jpg" alt="Celebrant memory two" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"><span>PHOTO 02</span></figure>
+        <figure class="gallery-photo"><img src="assets/photo-3.jpg" alt="Celebrant memory three" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"><span>PHOTO 03</span></figure>
+      </div>
+    </section>
+
+    <section class="timeline-section">
+      <div class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">OUR BIRTHDAY VOYAGE</p>
+          <h2>Adventure Timeline</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item"><span class="timeline-icon">⚓</span><div><small>FIRST STOP</small><h3>[Ceremony Time]</h3><p>Gather with the crew at the church.</p></div></div>
+          <div class="timeline-item"><span class="timeline-icon">⛵</span><div><small>SET SAIL</small><h3>[Travel / Photo Time]</h3><p>Capture memories before the feast.</p></div></div>
+          <div class="timeline-item"><span class="timeline-icon">🍖</span><div><small>THE GRAND FEAST</small><h3>[Reception Time]</h3><p>Food, games, laughter, and celebration!</p></div></div>
+          <div class="timeline-item"><span class="timeline-icon">🎉</span><div><small>FINAL CELEBRATION</small><h3>[Program / Party Time]</h3><p>Let's make this adventure unforgettable.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="details-section section-shell">
+      <div class="detail-card">
+        <div class="detail-icon">👒</div>
+        <p class="eyebrow">PIRATE ATTIRE</p>
+        <h2>Dress Code</h2>
+        <p>[Add your preferred colors or attire instructions here.]</p>
+        <p class="small-note">Come dressed for an unforgettable adventure!</p>
+      </div>
+      <div class="detail-card treasure-card">
+        <div class="detail-icon">💎</div>
+        <p class="eyebrow">TREASURE FOR THE CELEBRANT</p>
+        <h2>Gifts & Wishes</h2>
+        <p>[Add gift preferences or a short note about gifts here.]</p>
+        <p class="small-note">Your presence is already a precious treasure.</p>
+      </div>
+    </section>
+
+    <section class="rsvp-section">
+      <div class="section-shell rsvp-inner">
+        <div class="rsvp-flag">☠</div>
+        <p class="eyebrow">WILL YOU JOIN OUR CREW?</p>
+        <h2>We Need You on This Adventure!</h2>
+        <p>Please let us know if you'll be joining the celebration.</p>
+        <a class="button button-gold" id="rsvpButton" href="https://forms.google.com/" target="_blank" rel="noopener">JOIN THE CREW ↗</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-symbol">☠</div>
+      <h2>Thank You, Nakama!</h2>
+      <p>Every great adventure is better with friends. Thank you for being part of this special day. See you on the Grand Line!</p>
+      <span class="footer-line">UNTIL WE MEET AGAIN • THE BIRTHDAY CREW</span>
+      <a href="#top" class="back-top">BACK TO THE TOP ↑</a>
+    </footer>
+  </main>
+
+  <audio id="backgroundMusic" src="assets/music.mp3" loop preload="none"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
