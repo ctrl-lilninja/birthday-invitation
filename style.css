@@ -84,3 +84,123 @@ h1,h2,h3,.brand,.poster-top,.poster-name{font-family:"Pirata One",Georgia,serif;
 .reveal{opacity:0;transform:translateY(25px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:translateY(0)}
 @media(max-width:700px){.hero{min-height:590px;padding-top:70px}.hero-stamp{right:2%;top:12%;font-size:.8rem;padding:10px;border-width:3px}.hero h1{font-size:clamp(3.2rem,14vw,5.5rem);max-width:90%}.hero-copy{max-width:90%;font-size:.88rem}.location-grid{grid-template-columns:1fr}.map-art{height:150px}.gallery-grid{gap:9px}.gallery-photo{border-width:4px}.gallery-photo span{font-size:1.2rem}.details-section{grid-template-columns:1fr;padding-top:55px;padding-bottom:55px}.brand{font-size:.95rem}.music-button{font-size:.58rem;padding:8px}.section-heading h2{font-size:2.8rem}.wanted-poster{padding:17px 16px}.portrait-frame{height:210px}.countdown div{min-width:72px;padding:12px 8px}.countdown strong{font-size:2rem}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+.reception-photo {
+  position: relative;
+  width: 100%;
+  max-width: 260px;
+  height: 145px;
+  margin: 15px auto;
+  overflow: hidden;
+  border: 3px solid #d9a441;
+  border-radius: 12px;
+}
+
+.reception-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+}
+
+.reception-photo span {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: #8b1e1e;
+  color: white;
+  padding: 6px 10px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.church-photo {
+  width: 100%;
+  max-width: 260px;
+  height: 145px;
+  margin: 15px auto;
+  overflow: hidden;
+  border: 3px solid #d9a441;
+  border-radius: 12px;
+}
+
+.church-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Custom Invitation Advertisement */
+.promo-section {
+  padding: 45px 20px;
+  margin: 35px 0;
+  text-align: center;
+  background:
+    linear-gradient(rgba(20, 25, 35, 0.92), rgba(20, 25, 35, 0.95)),
+    url("assets/church-onepiece.png") center/cover;
+  border-top: 3px solid #d9a441;
+  border-bottom: 3px solid #d9a441;
+}
+
+.promo-content {
+  max-width: 480px;
+  margin: auto;
+  padding: 25px 20px;
+  border: 1px solid #d9a441;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.promo-icon {
+  font-size: 35px;
+}
+
+.promo-label {
+  color: #d9a441;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.promo-content h2 {
+  color: #f5d58a;
+  font-size: 25px;
+  margin: 12px 0;
+}
+
+.promo-content p {
+  color: #fff;
+  line-height: 1.7;
+}
+
+.promo-button {
+  display: inline-block;
+  margin: 18px 0;
+  padding: 13px 20px;
+  background: #1877f2;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.promo-button:hover {
+  transform: translateY(-3px);
+  background: #0866d5;
+}
+
+.promo-button span {
+  font-size: 18px;
+  margin-right: 7px;
+}
+
+.promo-content small {
+  display: block;
+  color: #d9a441;
+  font-style: italic;
+                }
