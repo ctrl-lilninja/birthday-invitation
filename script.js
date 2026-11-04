@@ -49,21 +49,16 @@ document.getElementById("openInvitation").addEventListener("click", () => {
 });
 
 // Optional music: audio begins only after the visitor taps the music button.
+// Open invitation and automatically play background music.
 const music = document.getElementById("backgroundMusic");
-const musicToggle = document.getElementById("musicToggle");
-musicToggle.addEventListener("click", async () => {
-  if (music.paused) {
-    try {
-      await music.play();
-      musicToggle.textContent = "♫ MUSIC: ON";
-      musicToggle.setAttribute("aria-pressed", "true");
-    } catch (error) {
-      musicToggle.textContent = "ADD MUSIC FILE";
-    }
-  } else {
-    music.pause();
-    musicToggle.textContent = "♫ MUSIC: OFF";
-    musicToggle.setAttribute("aria-pressed", "false");
+
+document.getElementById("openInvitation").addEventListener("click", async () => {
+  document.getElementById("intro").classList.add("closed");
+
+  try {
+    await music.play();
+  } catch (error) {
+    console.log("Music could not start:", error);
   }
 });
 
