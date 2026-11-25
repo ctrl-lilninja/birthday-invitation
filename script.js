@@ -9,7 +9,7 @@ const INVITATION = {
   dateText: "NOVEMBER 29, 2026",
   timeText: "11AM TO 1PM",
   // Local date/time for countdown. Example: "2027-05-16T17:30:00"
-  eventDateTime: "2026-11-29T11:00:00",
+  eventDateTime: "2026-11-29T10:00:00",
 
   churchName: "ST. PETER THE FISHERMAN PARISH CHURCH",
   churchAddress: "ST. PETER THE FISHERMAN PARISH CHURCH, NAPINDAN, TAGUIG CITY",
